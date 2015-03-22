@@ -1,0 +1,10 @@
+{
+	"/": {
+		"controller": "Home",
+		"action": "index"
+	},
+	"/{foo}/{bar}": {
+		"controller": "Home",
+		"action": "foo"
+	}
+}

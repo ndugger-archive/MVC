@@ -1,0 +1,11 @@
+@{layout master}
+
+<h2>@{foo.bar}</h2>
+
+<p>Lorem ipsum dolor sit amet, @{foo.baz.hoo}</p>
+
+@{each people->person}
+	<div>
+		<b>@{person.name}:</b> @{person.age}
+	</div>
+@{/each}
