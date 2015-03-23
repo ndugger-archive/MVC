@@ -5,9 +5,14 @@ This is just for learning, at least for now, anyways. **The server/ folder is th
 
 Modeled to be similar-ish to .NET MVC (as far as architecture goes), you will have 3 important folders:
 
-- app
-- public
-- views
+- **app/**
+  - *routes.json*
+  - *controllers/*
+  - *models/*
+- **public/**
+- **views/**
+  - *controller/*
+    - *action.html*
 
 **app:**
 
