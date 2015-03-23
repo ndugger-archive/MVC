@@ -1,9 +1,9 @@
 MVC Server in io.js
 ===================
 
-This is just for learning, at least for now, anyways. **The server/ folder is the MVC 'library'**, and the rest is just a test app that utilizes it.
+This is just for learning, at least for now, anyways. **The server/ folder is the MVC 'framework'**, and the rest is just a test app that utilizes it.
 
-Modeled to be similar-ish to .NET MVC (as far as architecture goes), you will have 3 important folders:
+Modeled to be similar-ish to .NET MVC (as far as architecture goes), you will have 3 important 'main' folders:
 
 - **app/**
   - *routes.json*
@@ -12,7 +12,7 @@ Modeled to be similar-ish to .NET MVC (as far as architecture goes), you will ha
 - **public/**
 - **views/**
   - *controller/*
-    - *action.html*
+    - *view.html*
 
 **app:**
 
