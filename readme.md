@@ -57,6 +57,7 @@ Layouts are possible, meaing that you can have a master layout that you set for 
     		<title>@{title}</title>
     	</head>
     	<body>
+    	  @{include partials/header}
     		@{render body}
     	</body>
     </html>
@@ -69,11 +70,15 @@ Layouts are possible, meaing that you can have a master layout that you set for 
     
     <p>Lorem ipsum dolor sit amet, @{foo.baz.hoo}</p>
     
-    @{each people->person}
-    	<div>
-    		<b>@{person.name}:</b> @{person.age}
-    	</div>
-    @{/each}
+    @{if people.length > 0}
+      @{each people->person}
+      	<div>
+      		<b>@{person.name}:</b> @{person.age}
+      	</div>
+      @{/each}
+    @{else}
+      There are no people...
+    @{/if}
   
 Notice, above, that you can also use loops to display each item from an array (from the data). This is done by aliasing each iteration (`people->person`).
 ____________________________________________________________
@@ -84,12 +89,14 @@ ____________________________________________________________
 - Controllers
 - Templating
   - Data insertion
+  - Logic
   - Loops
   - Layouts
+  - Partials
 - File serving
 
 **Working On:**
 
-- More templating features (especially partials)
+- More templating features
 - Synchronous file serving
 - More!?
