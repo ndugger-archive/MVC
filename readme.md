@@ -53,13 +53,13 @@ Layouts are possible, meaing that you can have a master layout that you set for 
 
     <!doctype html>
     <html>
-    	<head>
-    		<title>@{title}</title>
-    	</head>
-    	<body>
-    	  @{include partials/header}
-    		@{render body}
-    	</body>
+      <head>
+        <title>@{title}</title>
+      </head>
+      <body>
+        @{include partials/header}
+        @{render body}
+      </body>
     </html>
   
 *home/foo.html* (view file)
