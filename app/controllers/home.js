@@ -9,6 +9,7 @@ class Home extends Controller {
 	}
 	
 	static foo(request, response) {
+		let stuff = request.parameters;
 		this.view('foo', {
 			title: 'Test Templating',
 			foo: {
@@ -17,6 +18,7 @@ class Home extends Controller {
 					hoo: 'yes, this is placeholder text.'
 				}
 			},
+			a: 3,
 			people: [
 				{
 					name: 'Nick Dugger',
@@ -27,7 +29,7 @@ class Home extends Controller {
 					age: 18
 				},
 				{
-					name: 'Some Person',
+					name: stuff.foo + ' ' + stuff.bar,
 					age: 99
 				}
 			]

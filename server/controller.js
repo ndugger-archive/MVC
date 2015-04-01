@@ -11,6 +11,8 @@ class Controller {
 		fs.readFile(file, {encoding: 'utf8'}, function(error, view) {
 			if (error) {
 				//reject('Missing or inaccessable "' + file + '" file');
+				console.log(error);
+				response.end();
 			} else {
 				view = Template.construct(view, data);
 				response.writeHead(200, { "Content-Type": 'text/html' });
