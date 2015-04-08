@@ -1,4 +1,4 @@
-MVC Server in io.js
+*VC Server in io.js
 ===================
 
 This is just for learning, at least for now, anyways. **The server/ folder is the MVC 'framework'**, and the rest is just a test app that utilizes it.
